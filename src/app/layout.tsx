@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import type { Metadata } from 'next';
 import { Amaranth, DM_Sans } from 'next/font/google';
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${amaranth.variable} ${dmSans.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

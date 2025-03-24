@@ -6,3 +6,14 @@ export interface ButtonProps {
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
+
+export interface IconProps {
+  className?: string;
+  onClick?: React.MouseEventHandler<SVGSVGElement> | undefined;
+}
+
+export interface CardCarrouselProps {
+  imgSrc: string;
+  alt: string;
+  title: string;
+}
