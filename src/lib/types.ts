@@ -17,3 +17,8 @@ export interface CardCarrouselProps {
   alt: string;
   title: string;
 }
+export interface CardInfoProps {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className='lg:py-[62px] flex flex-col justify-center bg-neutral-extra-light lg:flex-row'>
+    <section className='relative lg:py-[62px] flex flex-col justify-center bg-neutral-extra-light lg:flex-row'>
       <div className='lg:max-w-[744px] flex flex-col gap-[22px] lg:pr-[96px]'>
         <h2 className='text-h2'>¿Quiénes somos?</h2>
         <p className='font-dm-sans text-[20px]'>
@@ -23,6 +23,15 @@ export default function AboutSection() {
           width={477}
           height={287}
           className='hidden lg:block rounded-[20px] w-[477px] h-[287px] object-cover object-center'
+        />
+      </div>
+
+      <div className='absolute top-0 right-[55px]'>
+        <Image
+          src={'/franjas_vertical.svg'}
+          alt='franjas de Italia'
+          width={24}
+          height={127}
         />
       </div>
     </section>

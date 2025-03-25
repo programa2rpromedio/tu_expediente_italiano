@@ -1,5 +1,7 @@
 import AboutSection from '@/components/AboutSection';
 import BannerHome from '@/components/BannerHome';
+import FormHome from '@/components/FormHome';
+import Maps from '@/components/Maps';
 import OurServices from '@/components/OurServices';
 import SubBannerHome from '@/components/SubBannerHome';
 
@@ -11,12 +13,8 @@ export default function Home() {
       <SubBannerHome />
       <OurServices />
       <AboutSection />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <FormHome />
+      <Maps />
     </>
   );
 }

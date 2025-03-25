@@ -23,12 +23,12 @@ export default function Footer() {
       </section>
       <hr />
       <section className='flex justify-between items-center'>
-        <div className='bg-transparent flex gap-4 lg: mt-[49px]'>
+        <div className='bg-transparent flex gap-4 lg:mt-[49px]'>
           <Facebook />
           <Instagram />
           <LinkeIn />
         </div>
-        <div className='flex justify-end'>
+        <div className='flex justify-end lg:mt-[49px]'>
           <ArrowUp
             className='cursor-pointer'
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
