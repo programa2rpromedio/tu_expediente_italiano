@@ -5,10 +5,10 @@ export default function BannerHome() {
         autoPlay
         muted
         loop
-        className='absolute inset-0 w-full h-full object-cover'
+        className='absolute inset-0 w-full h-full object-cover object-top'
       >
         <source
-          src='/video_banner.mp4'
+          src='/video_banner.webm'
           type='video/mp4'
         />
       </video>
