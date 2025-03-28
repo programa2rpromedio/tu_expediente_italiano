@@ -10,6 +10,7 @@ export interface ButtonProps {
 export interface IconProps {
   className?: string;
   onClick?: React.MouseEventHandler<SVGSVGElement> | undefined;
+  color?: string
 }
 
 export interface CardCarrouselProps {
