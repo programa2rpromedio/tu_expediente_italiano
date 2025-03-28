@@ -1,4 +1,4 @@
-'use client' 
+"use client";
 
 import React from "react";
 import { useEffect } from "react";
@@ -11,10 +11,10 @@ const images = [
 ];
 
 const testimonials = [
-    {src: '/testimonials/mario.mp4', alt: 'mario'},
-    {src: '/testimonials/facundo.mov', alt: 'facundo'},
-    {src: '/testimonials/testimonial3.png', alt: 'testimonial3'},
-]
+  { src: "/testimonials/mario.mp4", alt: "mario" },
+  { src: "/testimonials/facundo.mov", alt: "facundo" },
+  { src: "/testimonials/testimonial3.png", alt: "testimonial3" },
+];
 
 const cards = [
   {
@@ -30,102 +30,164 @@ const cards = [
 ];
 
 const About = () => {
-    const [clientSide, setClientSide] = useState(false);
+  const [clientSide, setClientSide] = useState(false);
 
   useEffect(() => {
     setClientSide(true);
   }, []);
 
-  if (!clientSide) return null; 
+  if (!clientSide) return null;
 
   return (
-<div className="min-h-[100vh] flex flex-col items-center">
-  {/* Sección Nosotros */}
-  <div className="bg-neutral-extra-light h-[300px] flex justify-center w-full pt-[62px]">
-    <h2 className="text-[28px] text-text-green font-bold">Nosotros</h2>
-  </div>
+    <div className="min-h-[100vh] flex flex-col items-center">
+      {/* Sección Nosotros */}
+      <div className="bg-neutral-extra-light h-[350px] flex justify-center w-full pt-[62px]">
+        <h2 className="text-[28px] text-text-green font-bold ">Nosotros</h2>
+      </div>
 
-  {/* Contenedor de imágenes y texto */}
-  <div className="relative -top-[150px] z-10 flex flex-col items-center gap-[20px]">
-    {/* Imágenes */}
-    <div className="flex flex-wrap justify-center gap-[20px]">
-      {images.map((image, index) => (
-        <div key={index} className="w-[305px] h-[290px] bg-white rounded-[10px] overflow-hidden">
-          <img src={image.src} alt={image.alt} className="w-full h-full object-cover object-center" />
+      {/* Contenedor de imágenes y texto */}
+      <div className="relative -top-[150px] z-10 flex flex-col items-center ">
+        {/* Imágenes */}
+        <div className="flex flex-wrap justify-center gap-[20px]">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="w-[305px] h-[290px] bg-white rounded-[10px] overflow-hidden"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className={`w-full h-full object-cover ${
+                  index === Math.floor(images.length / 2)
+                    ? "object-[59%_50%]"
+                    : "object-center"
+                }`}
+                />
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
 
-    {/* Texto principal */}
-    <p className="pt-[62px] w-[1002px] text-center text-[24px]">
-      Somos un equipo de profesionales (ingenieros, abogados, traductores y gestores) especializados en la transmisión de la ciudadanía italiana. 
-      Hacemos posible oportunidades y experiencias a nuestros clientes. Nos proponemos seguir creciendo continuamente, para cumplir el objetivo planteado desde un principio:
-    </p>
+          </div>
+        <p className=" w-[1002px] text-center text-[24px] mt-[-65px] pb-[28px]">
+          Somos un equipo de profesionales (ingenieros, abogados, traductores y
+          gestores) especializados en la transmisión de la ciudadanía italiana.
+          Hacemos posible oportunidades y experiencias a nuestros clientes. Nos
+          proponemos seguir creciendo continuamente, para cumplir el objetivo
+          planteado desde un principio:
+        </p>
+        {/* Texto principal */}
 
-    {/* Frase destacada */}
-    <span className="text-[28px] font-bold pb-[62px] text-center">
-      Generar puentes entre Italia y Argentina.
-    </span>
+        {/* Frase destacada */}
+        <h2 className="text-[28px] pb-[20px] font-bold  text-center  flex items-center justify-center pb-[62px]">
+          Generar puentes entre Italia y Argentina.
+        </h2>
 
-    {/* Sección de tarjetas */}
-    <div className="flex flex-wrap justify-center gap-[28px]">
-      {cards.map((card, index) => (
-        <div key={index} className="w-[466px] h-[344px] bg-[#DCF7D3] rounded-[10px] flex flex-col items-center text-center pt-[25px]">
-          <h3 className="text-text-green font-semibold text-[32px]">{card.title}</h3>
-          <p className="text-[24px] w-[418px]">{card.content}</p>
+        {/* Sección de tarjetas */}
+        <div className="flex flex-wrap justify-center gap-[28px]">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="w-[466px] h-[344px] bg-[#DCF7D3] rounded-[10px] flex flex-col items-center text-center pt-[25px]"
+            >
+              <h3 className="text-text-green font-semibold text-[32px] pb-[20px]">
+                {card.title}
+              </h3>
+              <p
+                className="text-[24px] w-[418px] "
+                style={{ lineHeight: " 130%" }}
+              >
+                {card.content}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
 
-    {/* Nuestra Historia */}
-    <h2 className="text-text-green font-semibold text-[28px] pb-[32px] pt-[62px]">Nuestra Historia</h2>
-    
-    <div className="w-[848px] mx-auto text-center text-[24px] flex flex-col gap-[30px]">
-      <p>
-        Después de 4 años trabajando en el Reconocimiento de la ciudadanía italiana, así como en brindar apoyo a los Ciudadanos Italianos, unido a un largo camino de estudio e investigación, decidimos dar inicio a Tu Expediente Italiano (T.E.I.).
-      </p>
-      <p>
-        Este proyecto surge en el 2019, pero es el año 2021 que nace de la fusión de dos personas con gran experiencia en el área: Yusselys, Ing. de Profesión con Diplomatura en Gerencia y Joaquina, Licenciada en Comunicación Social en la UNLP, con nacionalidad Italo-argentina, bilingüe en italiano.
-      </p>
-      <p>
-        T.E.I. es producto de dos visiones, dos grandes necesidades de dar respuesta, guía y acompañamiento. Buscamos generar oportunidades a otras personas para que puedan solicitar el reconocimiento de su ciudadanía italiana.
-      </p>
-    </div>
+        {/* Nuestra Historia */}
+        <h2 className="text-text-green font-semibold text-[28px] pb-[32px] pt-[62px]">
+          Nuestra Historia
+        </h2>
 
-    {/* Imagen grande */}
-    <div className="w-[942px] h-[660px] flex justify-center rounded-[10px] pt-[62px] overflow-hidden ">
-      <img src="/about-us/about4.png" className="w-full h-full rounded-[10px] object-cover object-[50%_60%]" />
-    </div>
-  </div>
-
-  {/* Testimonios */}
-  <h2 className="text-text-green font-bold text-[28px]">Testimonios de nuestros clientes</h2>
-  <div className="flex flex-wrap justify-center gap-[20px] py-[62px]">
-    {testimonials.map((testimonial, index) => {
-      const isVideo = testimonial.src.endsWith(".mp4") || testimonial.src.endsWith(".mov");
-
-      return (
-        <div key={`testimonial-${index}`} className="w-[305px] h-[531px] bg-white   flex justify-center items-center">
-          {isVideo ? (
-            <video
-              src={testimonial.src}
-              className="w-full h-full object-cover"
-              muted
-              loop
-              playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
-            />
-          ) : (
-            <img src={testimonial.src} alt={testimonial.alt} className="w-full h-full object-cover" />
-          )}
+        <div className="w-[848px] mx-auto text-center text-[24px] flex flex-col gap-[30px] pb-[62px]">
+          <p>
+            Después de 4 años trabajando en el Reconocimiento de la ciudadanía
+            italiana, así como en brindar apoyo a los Ciudadanos Italianos,
+            unido a un largo camino de estudio e investigación, decidimos dar
+            inicio a Tu Expediente Italiano (T.E.I.).
+          </p>
+          <p>
+            Este proyecto surge en el 2019, pero es el año 2021 que nace de la
+            fusión de dos personas con gran experiencia en el área: Yusselys,
+            Ing. de Profesión con Diplomatura en Gerencia y Joaquina, Licenciada
+            en Comunicación Social en la UNLP, con nacionalidad Italo-argentina,
+            bilingüe en italiano.
+          </p>
+          <p>
+            T.E.I. es producto de dos visiones, dos grandes necesidades de dar
+            respuesta, guía y acompañamiento. Buscamos generar oportunidades a
+            otras personas para que puedan solicitar el reconocimiento de su
+            ciudadanía italiana.
+          </p>
         </div>
-      );
-    })}
-  </div>
-  
-</div>
 
+      {/* Imagen grande */}
+      <div className="w-[942px] h-[660px] flex justify-center rounded-[10px]  overflow-hidden ">
+        <img
+          src="/about-us/about4.png"
+          className="w-full h-full rounded-[10px] object-cover object-[50%_60%]"
+        />
+      </div>
+
+      {/* Testimonios */}
+      <h2 className="text-text-green font-bold text-[28px] pt-[62px]">
+        Testimonios de nuestros clientes
+      </h2>
+      <div className="flex flex-wrap justify-center gap-[20px] py-[62px]">
+        {testimonials.map((testimonial, index) => {
+          const isVideo =
+            testimonial.src.endsWith(".mp4") ||
+            testimonial.src.endsWith(".mov");
+          return (
+            <div
+              key={`testimonial-${index}`}
+              className="w-[305px] h-[531px] bg-white   flex justify-center items-center"
+            >
+              {isVideo ? (
+                <video
+                  src={testimonial.src}
+                  className="w-full h-full object-cover"
+                  muted
+                  loop
+                  playsInline
+                  onMouseEnter={(e) => e.target.play()}
+                  onMouseLeave={(e) => e.target.pause()}
+                />
+              ) : (
+                <img
+                  src={testimonial.src}
+                  alt={testimonial.alt}
+                  className="w-full h-full object-cover"
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+      <div className="text-center  pb-[62px]">
+        <h2 className="text-text-green text-[40px] font-bold pb-[24px] w-[390px] mx-auto">
+          Nuestros servicios, garantizados.
+        </h2>
+        <p className="text-[#191919] text-[28px] font-bold text-center w-[390px] mx-auto">
+          La llave de tu ciudadanía
+        </p>
+        <p className="text-[#191919] text-[28px] font-bold pb-[24px] text-center w-auto">
+          Si querés, podemos y lo hacemos
+        </p>
+
+        <button className="bg-text-green text-white w-[390px] py-[16px] rounded-[10px] text-[20px] mx-auto">
+          Contactanos ahora
+        </button>
+      </div>
+    </div>
   );
 };
 
