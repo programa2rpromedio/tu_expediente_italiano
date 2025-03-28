@@ -1,4 +1,5 @@
-.swiper {
+.swiper-services,
+.swiper-opinions {
   width: 100%;
   height: 100%;
   padding: 40px 0;
@@ -16,12 +17,21 @@
   align-items: center;
 }
 
-.swiper-slide {
+.swiper-services .swiper-slide {
   transition: transform 0.3s;
   transform: scale(0.8); /* Los slides inactivos serán más pequeños */
 }
 
-.swiper-slide-active {
+.swiper-services .swiper-slide-active {
+  transform: scale(1.2); /* El slide activo será más grande */
+  z-index: 1; /* Asegura que el slide activo esté por encima */
+}
+.swiper-opinions .swiper-slide {
+  transition: transform 0.3s;
+  transform: scale(0.8); /* Los slides inactivos serán más pequeños */
+}
+
+.swiper-opinions .swiper-slide-active {
   transform: scale(1.2); /* El slide activo será más grande */
   z-index: 1; /* Asegura que el slide activo esté por encima */
 }
@@ -31,4 +41,12 @@
   background-color: var(
     --primary-regular
   ); /* Color primario para el bullet activo */
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide {
+  height: auto;
 }

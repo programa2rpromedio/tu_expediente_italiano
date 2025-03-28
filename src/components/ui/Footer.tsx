@@ -1,9 +1,9 @@
 'use client';
 
-import ArrowUp from './icon/ArrowUp';
-import Facebook from './icon/Facebook';
-import Instagram from './icon/Instagram';
-import LinkeIn from './icon/LinkeIn';
+import ArrowUp from '../icon/ArrowUp';
+import Facebook from '../icon/Facebook';
+import Instagram from '../icon/Instagram';
+import LinkeIn from '../icon/LinkeIn';
 export default function Footer() {
   return (
     <footer className='bg-neutral-dark text-white text-xl lg:py-[48px] lg:px-[80px]'>

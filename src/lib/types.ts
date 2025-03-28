@@ -22,3 +22,8 @@ export interface CardInfoProps {
   description: string;
   icon: React.ReactNode;
 }
+export interface CardOpinionProps {
+  name: string;
+  opinion: string;
+  stars: number;
+}

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import CardInfo from './CardInfo';
-import Form from './Form';
 import Oficina from './icon/Oficina';
 import Telefono from './icon/Telefono';
+import Form from './ui/Form';
 export default function FormHome() {
   return (
     <section className='relative -full lg:h-[783px] bg-[url("/bg_form.webp")] bg-cover bg-center flex justify-center items-center'>
