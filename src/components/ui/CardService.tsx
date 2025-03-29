@@ -1,31 +1,27 @@
 import { CardCarrouselProps } from '@/lib/types';
 import Image from 'next/image';
 
-export default function CardService({
-  imgSrc,
-  alt,
-  title,
-}: CardCarrouselProps) {
+export default function CardService({ imgSrc, alt, title }: CardCarrouselProps) {
   return (
-    <div className='lg:w-[412px] w-[320px] lg:h-[317px] h-[307px] rounded-[20px] px-[10px] py-4 lg:p-4 overflow-hidden bg-neutral-extra-light hover:bg-primary-extra-light transition-all duration-300 cursor-pointer'>
-      <div className='lg:pb-6 min-[330px]:pb-4 overflow-hidden'>
+    <div className="bg-neutral-extra-light hover:bg-primary-extra-light h-[307px] w-[320px] cursor-pointer overflow-hidden rounded-[20px] px-[10px] py-4 transition-all duration-300 lg:h-[317px] lg:w-[412px] lg:p-4">
+      <div className="overflow-hidden min-[330px]:pb-4 lg:pb-6">
         <Image
           src={imgSrc}
           alt={alt}
           width={412}
           height={317}
-          className='lg:block hidden  w-[380px] h-[240px] object-cover rounded-[10px]'
+          className="hidden h-[240px] w-[380px] rounded-[10px] object-cover lg:block"
         />
         <Image
           src={imgSrc}
           alt={alt}
           width={320}
           height={256}
-          className='lg:hidden w-[320px] h-[240px] object-cover rounded-[10px]'
+          className="h-[240px] w-[320px] rounded-[10px] object-cover lg:hidden"
         />
       </div>
-      <div className='lg:px-6 lg:pb-6 md:pb-4  px-4 text-center'>
-        <h3 className='font-amaranth lg:text-xl text-[18px] '>{title}</h3>
+      <div className="px-4 text-center md:pb-4 lg:px-6 lg:pb-6">
+        <h3 className="font-amaranth text-[18px] lg:text-xl">{title}</h3>
       </div>
     </div>
   );

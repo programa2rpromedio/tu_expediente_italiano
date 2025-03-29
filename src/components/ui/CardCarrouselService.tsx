@@ -1,31 +1,27 @@
 import { CardCarrouselProps } from '@/lib/types';
 import Image from 'next/image';
 
-export default function CardCarrousel({
-  imgSrc,
-  alt,
-  title,
-}: CardCarrouselProps) {
+export default function CardCarrousel({ imgSrc, alt, title }: CardCarrouselProps) {
   return (
-    <div className='lg:w-[413px] w-[322px] lg:h-[396px] h-[310px] rounded-[20px] overflow-hidden bg-neutral-extra-light'>
-      <div className='lg:pb-6 min-[330px]:pb-4 overflow-hidden'>
+    <div className="bg-neutral-extra-light h-[310px] w-[322px] overflow-hidden rounded-[20px] lg:h-[396px] lg:w-[413px]">
+      <div className="overflow-hidden min-[330px]:pb-4 lg:pb-6">
         <Image
           src={imgSrc}
           alt={alt}
           width={413}
           height={324}
-          className='lg:block hidden  w-[413px] h-[324px] object-cover rounded-[20px]'
+          className="hidden h-[324px] w-[413px] rounded-[20px] object-cover lg:block"
         />
         <Image
           src={imgSrc}
           alt={alt}
           width={322}
           height={256}
-          className='lg:hidden w-[322px] h-[256px] object-cover rounded-[20px]'
+          className="h-[256px] w-[322px] rounded-[20px] object-cover lg:hidden"
         />
       </div>
-      <div className='lg:px-6 lg:pb-6 md:pb-4  px-4 text-center'>
-        <h3 className='font-amaranth lg:text-xl text-[18px] '>{title}</h3>
+      <div className="px-4 text-center md:pb-4 lg:px-6 lg:pb-6">
+        <h3 className="font-amaranth text-[18px] lg:text-xl">{title}</h3>
       </div>
     </div>
   );

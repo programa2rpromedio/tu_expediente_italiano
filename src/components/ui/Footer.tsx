@@ -6,15 +6,15 @@ import Instagram from '../icon/Instagram';
 import LinkeIn from '../icon/LinkeIn';
 export default function Footer() {
   return (
-    <footer className='bg-neutral-dark text-white text-xl px-[20px] py-[24px] lg:py-[48px] lg:px-[80px]'>
-      <section className='flex flex-col lg:flex-row justify-between lg:pb-[49px] mb-[32px] lg:mb-0 px-[18px] lg:px-0'>
-        <div className='mb-[32px] lg:mb-0'>
-          <h2 className='text-[20px] lg:text-[28px] font-amaranth font-semibold '>
+    <footer className="bg-neutral-dark px-[20px] py-[24px] text-xl text-white lg:px-[80px] lg:py-[48px]">
+      <section className="mb-[32px] flex flex-col justify-between px-[18px] lg:mb-0 lg:flex-row lg:px-0 lg:pb-[49px]">
+        <div className="mb-[32px] lg:mb-0">
+          <h2 className="font-amaranth text-[20px] font-semibold lg:text-[28px]">
             La llave de tu ciudadanía. <br />
             Si querés, podemos y lo hacemos
           </h2>
         </div>
-        <div className='text-[16px] lg:text-[20px] flex flex-col gap-[16px] lg:gap-[36px]'>
+        <div className="flex flex-col gap-[16px] text-[16px] lg:gap-[36px] lg:text-[20px]">
           <p>info@tuexpedienteitaliano.com</p>
           <p>tuexpedienteitaliano@gmail.com</p>
           <p>+54 9 1124084508</p>
@@ -22,15 +22,15 @@ export default function Footer() {
         </div>
       </section>
       <hr />
-      <section className='flex justify-between items-center mt-[32px] lg:mt-0 px-[18px] lg:px-0'>
-        <div className='bg-transparent flex gap-4 lg:mt-[49px]'>
-          <Facebook className='w-[40px] h-[40px] lg:w-[62px] lg:h-[62px]' />
-          <Instagram className='w-[40px] h-[40px] lg:w-[62px] lg:h-[62px]' />
-          <LinkeIn className='w-[40px] h-[40px] lg:w-[62px] lg:h-[62px]' />
+      <section className="mt-[32px] flex items-center justify-between px-[18px] lg:mt-0 lg:px-0">
+        <div className="flex gap-4 bg-transparent lg:mt-[49px]">
+          <Facebook className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          <Instagram className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          <LinkeIn className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
         </div>
-        <div className='flex justify-end lg:mt-[49px]'>
+        <div className="flex justify-end lg:mt-[49px]">
           <ArrowUp
-            className='cursor-pointer w-[40px] h-[40px] lg:w-[62px] lg:h-[62px]'
+            className="h-[40px] w-[40px] cursor-pointer lg:h-[62px] lg:w-[62px]"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
         </div>
