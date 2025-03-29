@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -14,7 +14,7 @@
   --neutral-dark: #323437;
 
   --accent-regular: #fb0000;
-
+  --title-text-green: #00ad3c;
   --text-size-h1: 63px;
   --text-size-h2: 32px;
   --text-size-subtitulo: 24px;
@@ -59,7 +59,7 @@
   --color-neutral-light: var(--neutral-light);
   --color-neutral-regular: var(--neutral-regular);
   --color-neutral-dark: var(--neutral-dark);
-
+  --color-text-green: var(--title-text-green);
   --color-accent-regular: var(--accent-regular);
 
   --font-amaranth: var(--font-amaranth);

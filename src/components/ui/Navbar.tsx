@@ -52,7 +52,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     className='text-neutral-dark transition hover:text-neutral-dark/75'
-                    href='#'
+                    href='/nosotros'
                   >
                     Nosotros
                   </Link>
