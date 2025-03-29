@@ -3,9 +3,9 @@ import CarrouselOpinions from './CarrouselOpinions';
 
 export default function Opinions() {
   return (
-    <section className='lg:py-[80px]'>
+    <section className='py-[40px] lg:py-[80px]'>
       <div>
-        <div className='lg:mb-[41px]'>
+        <div className='mb-[24px] lg:mb-[41px]'>
           <h2 className='text-h2 text-center text-primary-regular'>
             Opiniones
           </h2>

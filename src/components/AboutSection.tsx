@@ -2,17 +2,17 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section className='relative lg:py-[62px] flex flex-col justify-center bg-neutral-extra-light lg:flex-row'>
+    <section className='relative p-[40px] lg:p-0 lg:py-[62px] flex flex-col justify-center bg-neutral-extra-light lg:flex-row text-center'>
       <div className='lg:max-w-[744px] flex flex-col gap-[22px] lg:pr-[96px]'>
-        <h2 className='text-h2'>¿Quiénes somos?</h2>
-        <p className='font-dm-sans text-[20px]'>
+        <h2 className='text-xl lg:text-h2 font-bold'>¿Quiénes somos?</h2>
+        <p className='font-dm-sans text-[18px] lg:text-[20px]'>
           Somos un equipo de profesionales (ingenieros, licenciados, abogados,
           traductores y gestores) especializados en la transmisión de la
           ciudadanía italiana. Hacemos posible oportunidades y experiencias a
           nuestros clientes. Nos proponemos seguir creciendo continuamente para
           cumplir el objetivo planteado desde un principio:
         </p>
-        <h3 className='font-dm-sans text-2xl text-primary-regular'>
+        <h3 className='font-dm-sans text-xl lg:text-2xl  text-primary-regular'>
           Generar puentes entre Italia y Argentina
         </h3>
       </div>
@@ -32,6 +32,7 @@ export default function AboutSection() {
           alt='franjas de Italia'
           width={24}
           height={127}
+          className='w-[12px] h-[77px] lg:w-[24px] lg:h-[127px]'
         />
       </div>
     </section>

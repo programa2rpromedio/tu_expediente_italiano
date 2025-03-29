@@ -17,8 +17,11 @@ export default function Navbar() {
                 alt='Logo Tu expediente italiano'
                 width={79}
                 height={79}
+                className='w-[42px] h-[42px] lg:w-[79px] lg:h-[79px]'
               />
-              <h2>Tu Expediente Italiano</h2>
+              <h2 className='text-[16px] lg:text-[24px]'>
+                Tu Expediente Italiano
+              </h2>
             </Link>
           </div>
 

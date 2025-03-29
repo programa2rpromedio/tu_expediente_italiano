@@ -18,7 +18,7 @@ import CardCarrouselService from './ui/CardCarrouselService';
 export default function CarrouselServices() {
   return (
     <section className='max-w-[1440px] mx-auto relative'>
-      <div className='w-[1071px] mx-auto overflow-visible'>
+      <div className='max-w-[1071px] mx-auto overflow-visible'>
         <Swiper
           modules={[Navigation, Pagination]}
           pagination={{
@@ -35,9 +35,9 @@ export default function CarrouselServices() {
           centeredSlides={true} // Asegura que el slide activo esté centrado
           loop={true}
           breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
+            320: {
+              slidesPerView: 1.5,
+              spaceBetween: 2,
             },
             768: {
               slidesPerView: 2,
@@ -60,13 +60,21 @@ export default function CarrouselServices() {
           ))}
         </Swiper>
       </div>
-      <div className='swiper-button-prev-services absolute! top-1/2 -translate-y-1/2 left-0! rounded-full bg-primary-extra-light text-primary-regular! w-[64px]! h-[64px]! after:hidden flex justify-center items-center'>
+      <div className='swiper-button-prev-services absolute! top-1/2 -translate-y-1/2 left-0! rounded-full bg-primary-extra-light text-primary-regular! w-[64px]! h-[64px]! after:hidden  justify-center items-center lg:flex hidden'>
         <ArrowLeft className='w-[40px] h-[40px] cursor-pointer' />
       </div>
-      <div className='swiper-button-next-services absolute! top-1/2 -translate-y-1/2 right-0! rounded-full bg-primary-extra-light text-primary-regular! w-[64px]! h-[64px]! after:hidden flex justify-center items-center'>
+      <div className='swiper-button-next-services absolute! top-1/2 -translate-y-1/2 right-0! rounded-full bg-primary-extra-light text-primary-regular! w-[64px]! h-[64px]! after:hidden  justify-center items-center lg:flex hidden'>
         <ArrowRight className='w-[40px] h-[40px] cursor-pointer' />
       </div>
-      <div className='swiper-pagination-services color-primary-regular! absolute   bottom-[-32]! flex justify-center'></div>
+      <div className='swiper-pagination-services color-primary-regular! absolute   bottom-[-32]!  justify-center lg:flex hidden'></div>
+      <div className='lg:hidden mb-[40px] mt-[24px] flex justify-center items-center gap-[20px]'>
+        <div className='swiper-button-prev-services rounded-full bg-primary-extra-light text-primary-regular!'>
+          <ArrowLeft className='w-[40px] h-[40px] cursor-pointer' />
+        </div>
+        <div className='swiper-button-next-services rounded-full bg-primary-extra-light text-primary-regular!'>
+          <ArrowRight className='w-[40px] h-[40px] cursor-pointer' />
+        </div>
+      </div>
     </section>
   );
 }

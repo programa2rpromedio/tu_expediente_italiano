@@ -43,7 +43,7 @@ export default function Form() {
   return (
     <form
       action=''
-      className='flex flex-wrap gap-y-[14.5] gap-x-4 max-w-[484px] max-h-[534px]'
+      className='flex flex-wrap gap-y-[14.5] gap-x-4 max-w-[484px] mx-auto max-h-[534px]'
     >
       {formFields.map((field) => (
         <div

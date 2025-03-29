@@ -2,7 +2,6 @@
 .swiper-opinions {
   width: 100%;
   height: 100%;
-  padding: 40px 0;
   overflow-y: visible !important;
 }
 
@@ -22,18 +21,25 @@
   transform: scale(0.8); /* Los slides inactivos serán más pequeños */
 }
 
-.swiper-services .swiper-slide-active {
-  transform: scale(1.2); /* El slide activo será más grande */
-  z-index: 1; /* Asegura que el slide activo esté por encima */
-}
 .swiper-opinions .swiper-slide {
   transition: transform 0.3s;
   transform: scale(0.8); /* Los slides inactivos serán más pequeños */
 }
 
-.swiper-opinions .swiper-slide-active {
-  transform: scale(1.2); /* El slide activo será más grande */
-  z-index: 1; /* Asegura que el slide activo esté por encima */
+@media screen and (min-width: 1024px) {
+  .swiper-services,
+  .swiper-opinions {
+    padding: 40px 0;
+  }
+
+  .swiper-services .swiper-slide-active {
+    transform: scale(1.2); /* El slide activo será más grande */
+    z-index: 1; /* Asegura que el slide activo esté por encima */
+  }
+  .swiper-opinions .swiper-slide-active {
+    transform: scale(1.2); /* El slide activo será más grande */
+    z-index: 1; /* Asegura que el slide activo esté por encima */
+  }
 }
 
 /* Estilo para el bullet activo */

@@ -13,7 +13,7 @@ export default function CardOpinion({
 }: Props) {
   return (
     <div
-      className={`bg-neutral-extra-light rounded-[10px] lg:py-[20px] lg:px-[15px] flex flex-col gap-6 h-full ${className}`}
+      className={`bg-neutral-extra-light rounded-[10px] py-[20px] px-[15px] flex flex-col gap-6 h-full ${className}`}
     >
       <div className='flex flex-col gap-4 '>
         <h3 className='font-dm-sans font-semibold text-xl'>{name}</h3>
