@@ -1,5 +1,5 @@
 import { CardOpinionProps } from '@/lib/types';
-import Star from './icon/Star';
+import Star from '../icon/Star';
 
 interface Props extends CardOpinionProps {
   className?: string;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import CardInfo from './CardInfo';
 import Oficina from './icon/Oficina';
 import Telefono from './icon/Telefono';
+import CardInfo from './ui/CardInfo';
 import Form from './ui/Form';
 export default function FormHome() {
   return (

@@ -10,9 +10,9 @@ import 'swiper/css/pagination';
 import '../styles/carrousel.css';
 
 import { opiniones } from '@/data/opiniones';
-import CardOpinion from './CardOpinion';
 import ArrowLeft from './icon/ArrowLeft';
 import ArrowRight from './icon/ArrowRight';
+import CardOpinion from './ui/CardOpinion';
 
 export default function CarrouselOpinions() {
   return (
