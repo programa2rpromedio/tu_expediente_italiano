@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Navbar() {
   return (
     <header className="bg-neutral-extra-light py-4">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Link className="text-h2 text-foreground flex items-center gap-5" href="/">
@@ -22,11 +22,11 @@ export default function Navbar() {
 
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex items-center gap-6 text-sm">
+              <ul className="flex items-center gap-6 text-lg">
                 <li>
                   <Link
                     className="text-neutral-dark hover:text-neutral-dark/75 transition"
-                    href="#"
+                    href="/"
                   >
                     Inicio
                   </Link>
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     className="text-neutral-dark hover:text-neutral-dark/75 transition"
-                    href="#"
+                    href="/servicios"
                   >
                     Servicios
                   </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 <li>
                   <Link
                     className="text-neutral-dark hover:text-neutral-dark/75 transition"
-                    href="#"
+                    href="/contacto"
                   >
                     Contacto
                   </Link>

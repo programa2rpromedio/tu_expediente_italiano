@@ -72,3 +72,9 @@ export const opiniones = [
       'Excelente atencion y servicio. Muy agradecida por lo logrado Lo recomiendo 100% Gracias infinitas !!',
   },
 ];
+
+export const testimonials = [
+  { src: '/testimonials/mario.mp4', alt: 'mario' },
+  { src: '/testimonials/facundo.mov', alt: 'facundo' },
+  { src: '/testimonials/testimonial3.png', alt: 'testimonial3' },
+];
