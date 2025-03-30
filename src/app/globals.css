@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary-extra-light: #c5f6b5;
+  --primary-extra-light: #dcf7d3;
   --primary-light: #30cf67;
   --primary-regular: #05ab3f;
   --primary-dark: #006c26;
@@ -23,13 +23,24 @@
 }
 
 @layer utilities {
-  .text-h1 {
+  .text-h1.text-h1 {
+    font-size: var(--text-size-h1) !important;
+    font-family: var(--font-amaranth) !important;
+  }
+
+  .lg\:text-h1.lg\:text-h1 {
     font-size: var(--text-size-h1);
     font-family: var(--font-amaranth);
   }
-  .text-h2 {
-    font-size: var(--text-size-h2);
-    font-family: var(--font-amaranth);
+
+  .text-h2.text-h2 {
+    font-size: var(--text-size-h2) !important;
+    font-family: var(--font-amaranth) !important;
+  }
+
+  .lg\:text-h2.lg\:text-h2 {
+    font-size: var(--text-size-h2) !important;
+    font-family: var(--font-amaranth) !important;
   }
 
   .text-subtitulo {

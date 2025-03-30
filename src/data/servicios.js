@@ -16,6 +16,7 @@ export const serviciosCategorias = [
     nombre: 'Ciudadania en Argentina',
     imagen: '/images/ciudadania_en_argentina.webp',
     slug: 'ciudadania-en-argentina',
+    banner: '/images/ciudadania_en_argentina_banner.webp',
   },
   {
     id: 4,
@@ -34,5 +35,6 @@ export const serviciosCategorias = [
     nombre: 'Juicio por falta de turno',
     imagen: '/images/juicio_falta_turno.webp',
     slug: 'juicio-por-falta-de-turno',
+    banner: '/images/juicio_falta_turno_banner.webp',
   },
 ];

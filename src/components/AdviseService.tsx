@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AdviseService() {
   return (
-    <section className="bg-neutral-extra-light flex flex-col justify-center px-[24px] py-[32px] lg:flex-row lg:gap-[150px] lg:p-[80]">
+    <section className="bg-neutral-extra-light flex flex-col justify-center px-[24px] py-[32px] lg:flex-row lg:p-[80] 2xl:gap-[150px]">
       <div>
         <div className="max-w-[630px] text-base lg:text-2xl">
           <p>

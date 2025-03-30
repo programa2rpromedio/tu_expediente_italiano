@@ -21,6 +21,7 @@ export default function Servicios() {
             imgSrc={service.imagen}
             alt={service.nombre}
             title={service.nombre}
+            slug={service.slug}
           />
         ))}
       </section>

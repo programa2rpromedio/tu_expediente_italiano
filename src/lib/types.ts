@@ -17,6 +17,7 @@ export interface CardCarrouselProps {
   imgSrc: string;
   alt: string;
   title: string;
+  slug: string;
 }
 export interface CardInfoProps {
   title: string;
@@ -27,4 +28,10 @@ export interface CardOpinionProps {
   name: string;
   opinion: string;
   stars: number;
+}
+
+export interface DropdownServiceProps {
+  titulo: string;
+  children: React.ReactNode;
+  open?: boolean;
 }
