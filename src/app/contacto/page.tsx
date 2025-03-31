@@ -1,28 +1,35 @@
+import CardInfo from '@/components/CardInfo';
 import Facebook from '@/components/icon/Facebook';
 import Instagram from '@/components/icon/Instagram';
 import LinkeIn from '@/components/icon/LinkeIn';
 import Oficina from '@/components/icon/Oficina';
 import Telefono from '@/components/icon/Telefono';
 import Maps from '@/components/Maps';
-import CardInfo from '@/components/ui/CardInfo';
 import Form from '@/components/ui/Form';
+
 const Contacto = () => {
   return (
     <div>
-      <div className="h-auto bg-[#F6F6F6]">
-        <h2 className="text-text-green pt-[62px] pb-[16px] text-center text-[28px] font-semibold">
-          ¡Estás a un paso de tu Ciudadanía Italiana!
-        </h2>
-        <p className="text-text-green m-auto w-[350px] pb-[62px] text-center text-[24px]">
-          Agendá una asesoría con nosotros y evaluamos tu caso
-        </p>
+      {/* Contenedor de contacto  */}
+      <div>
+        <div className="bg-[#F6F6F6] h-auto">
+          <h2 className="text-text-green sm:text-[28px] text-[20px] w-[284px] sm:w-[100%] m-auto font-semibold text-center pt-[62px] pb-[16px]">
+            ¡Estás a un paso de tu Ciudadanía Italiana!
+          </h2>
+          <p className="sm:text-[24px] text-[16px] text-text-green text-center m-auto w-[350px] pb-[62px]">
+            Agendá una asesoría con nosotros y evaluamos tu caso
+          </p>
+        </div>
+
+        <section className='relative -full lg:h-[648px] bg-[url("/bg_form.webp")] bg-cover bg-center flex justify-center items-center'>
+          <div className="bg-[url('/ruta-de-la-imagen.jpg')] bg-cover   sm:bg-center ">
+            <Form />
+          </div>
+        </section>
       </div>
 
-      <section className='-full relative flex items-center justify-center bg-[url("/bg_form.webp")] bg-cover bg-center lg:h-[648px]'>
-        <div className="flex items-center justify-center gap-[195px] lg:h-[537px] lg:w-[1035px]">
-          <Form />
-        </div>
-      </section>
+      {/* Agradecimientos por contactar */}
+      {/* <ThanksForContacting/> */}
 
       <div className="align-center flex flex-col justify-center gap-[24px] py-[80px] text-center">
         <h2 className="text-text-green text-[28px] font-bold">
@@ -36,25 +43,26 @@ const Contacto = () => {
         </div>
       </div>
 
-      <div className="flex flex-row justify-center gap-[24px] pb-[80px]">
-        <div className="w-[356px]">
+      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center items-center sm:pb-[80px] pb-[24px]">
+        <div className="w-[356px] items-center flex justify-center">
           <CardInfo
             title="Nuestra oficina"
-            description="Calle 48, Num 877. La Plata. 
-          Buenos Aires, Argentina"
+            description="Calle 48, Num 877. La Plata. Buenos Aires, Argentina"
             icon={<Oficina className="text-primary-dark" />}
           />
         </div>
-        <div className="w-[356px]">
+        <div className="w-[356px] flex justify-center">
           <CardInfo
             title="Contacto"
-            description={`Teléfono: +54 9 1124084508 Mail: tuexpedienteitaliano@gmail.com`}
+            description={`Teléfono: +54 9 1124084508 Mail: tuexpedienteitaliano@gmail.com`}
             icon={<Telefono className="text-primary-dark" />}
           />
         </div>
       </div>
 
-      <Maps />
+      <div className="px-[20px] pb-[40px]">
+        <Maps />
+      </div>
     </div>
   );
 };
