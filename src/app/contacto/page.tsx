@@ -1,10 +1,10 @@
-import CardInfo from '@/components/CardInfo';
 import Facebook from '@/components/icon/Facebook';
 import Instagram from '@/components/icon/Instagram';
 import LinkeIn from '@/components/icon/LinkeIn';
 import Oficina from '@/components/icon/Oficina';
 import Telefono from '@/components/icon/Telefono';
 import Maps from '@/components/Maps';
+import CardInfo from '@/components/ui/CardInfo';
 import Form from '@/components/ui/Form';
 
 const Contacto = () => {
