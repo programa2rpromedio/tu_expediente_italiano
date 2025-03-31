@@ -6,7 +6,7 @@ import Button from './ui/Button';
 export default function SubBannerHome() {
   return (
     <section className="bg-neutral-extra-light relative flex h-[199px] justify-center py-[37px] shadow-[61px_4px_39.4px_0px_#60606040]">
-      <div className="flex flex-col items-center gap-[25px]">
+      <div className="flex flex-col items-center gap-[25px] text-center">
         <h2 className="lg:text-h2 text-2xl max-[400px]:text-[18px]">
           ¡Si querés, podemos y lo hacemos!
         </h2>
