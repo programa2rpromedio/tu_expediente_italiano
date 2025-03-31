@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import ArrowUp from '../icon/ArrowUp';
 import Facebook from '../icon/Facebook';
 import Instagram from '../icon/Instagram';
@@ -24,9 +25,18 @@ export default function Footer() {
       <hr />
       <section className="mt-[32px] flex items-center justify-between px-[18px] lg:mt-0 lg:px-0">
         <div className="flex gap-4 bg-transparent lg:mt-[49px]">
-          <Facebook className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
-          <Instagram className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
-          <LinkeIn className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          <Link href="https://www.facebook.com/tuexpedienteitaliano/?ti=as" target="_blank">
+            <Facebook className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          </Link>
+          <Link href="https://www.instagram.com/tuexpediente.italiano/" target="_blank">
+            <Instagram className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/tu-expediente-italiano-5ba0b723a/"
+            target="_blank"
+          >
+            <LinkeIn className="h-[40px] w-[40px] lg:h-[62px] lg:w-[62px]" />
+          </Link>
         </div>
         <div className="flex justify-end lg:mt-[49px]">
           <ArrowUp

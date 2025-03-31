@@ -34,7 +34,7 @@ export const serviciosCategorias = [
     id: 6,
     nombre: 'Juicio por falta de turno',
     imagen: '/images/juicio_falta_turno.webp',
-    slug: 'Juicio por falta de turno',
+    slug: 'juicio-por-falta-de-turno',
     banner: '/images/juicio_falta_turno_banner.webp',
   },
 ];

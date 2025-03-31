@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import ArrowDown from '../icon/ArrowDown';
 
 export default function Navbar() {
   const [showNavMobile, setShowNavMobile] = useState(false);
@@ -41,10 +42,11 @@ export default function Navbar() {
 
                 <li className="relative group ">
                   <Link
-                    className="text-neutral-dark  transition hover:text-primary-dark"
+                    className="text-neutral-dark  transition hover:text-primary-dark flex items-center gap-2"
                     href="/servicios"
                   >
                     Servicios
+                    <ArrowDown />
                   </Link>
                   <ul className="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-64 ">
                     <li className="hover:bg-neutral-100">

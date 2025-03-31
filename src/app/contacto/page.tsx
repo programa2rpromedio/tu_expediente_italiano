@@ -6,6 +6,7 @@ import Telefono from '@/components/icon/Telefono';
 import Maps from '@/components/Maps';
 import CardInfo from '@/components/ui/CardInfo';
 import Form from '@/components/ui/Form';
+import Link from 'next/link';
 
 const Contacto = () => {
   return (
@@ -37,17 +38,26 @@ const Contacto = () => {
         </h2>
 
         <div className="flex justify-center gap-4">
-          <Facebook color="#006C26" />
-          <Instagram color="#006C26" />
-          <LinkeIn color="#006C26" />
+          <Link href="https://www.facebook.com/tuexpedienteitaliano/?ti=as" target="_blank">
+            <Facebook color="#006C26" className="cursor-pointer" />
+          </Link>
+          <Link href="https://www.instagram.com/tuexpediente.italiano/" target="_blank">
+            <Instagram color="#006C26" className="cursor-pointer" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/tu-expediente-italiano-5ba0b723a/"
+            target="_blank"
+          >
+            <LinkeIn color="#006C26" className="cursor-pointer" />
+          </Link>
         </div>
       </div>
 
-      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center items-center sm:pb-[80px] pb-[24px]">
-        <div className="w-[356px] items-center flex justify-center">
+      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center  sm:pb-[80px] pb-[24px]">
+        <div className="w-[356px]  flex justify-center">
           <CardInfo
             title="Nuestra oficina"
-            description="Calle 48, Num 877. La Plata. Buenos Aires, Argentina"
+            description="Calle 48, Num 877."
             icon={<Oficina className="text-primary-dark" />}
           />
         </div>

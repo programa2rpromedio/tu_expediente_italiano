@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Button from './ui/Button';
 
@@ -10,7 +12,8 @@ export default function SubBannerHome() {
         </h2>
         <Button
           style="primary"
-          className="lg:text-btn w-[171px] cursor-pointer text-[16px]! text-nowrap lg:w-[257px]!"
+          className="lg:text-[20px] font-dm-sans w-[171px] cursor-pointer text-[16px]! text-nowrap lg:w-[257px]!"
+          onClick={() => window.open('https://wa.me/5491124084508')}
         >
           Consultanos ahora
         </Button>

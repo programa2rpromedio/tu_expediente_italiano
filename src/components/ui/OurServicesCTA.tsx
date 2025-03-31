@@ -13,7 +13,11 @@ export default function OurServicesCTA() {
         Si querés, podemos y lo hacemos
       </p>
 
-      <Button style="primary" className="mx-auto w-[257px]! cursor-pointer">
+      <Button
+        style="primary"
+        className="mx-auto w-[257px]! cursor-pointer"
+        onClick={() => window.open('https://wa.me/5491124084508')}
+      >
         Contactanos ahora
       </Button>
     </div>

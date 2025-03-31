@@ -13,7 +13,11 @@ export default function AdviseCTA() {
             requerimiento es vía judicial.
           </p>
         </div>
-        <Button style="primary" className="mx-auto w-max! text-nowrap">
+        <Button
+          style="primary"
+          className="mx-auto w-max! text-nowrap cursor-pointer"
+          onClick={() => window.open('https://wa.me/5491124084508')}
+        >
           Quiero una asesoría
         </Button>
       </div>
