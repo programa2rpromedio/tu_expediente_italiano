@@ -7,13 +7,13 @@ import TurnJudgmentService from '@/components/TurnJudgmentService';
 import { serviciosCategorias } from '@/data/servicios';
 
 export async function generateStaticParams() {
-  return serviciosCategorias.map((servicio) => ({
+  return await serviciosCategorias.map((servicio) => ({
     slug: servicio.slug,
   }));
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
   switch (slug) {
     case 'asesoria':
@@ -53,6 +53,6 @@ export default function Page({ params }: { params: { slug: string } }) {
         </div>
       );
     default:
-      break;
+      return <div className="min-h-screen">Página no encontrada</div>;
   }
 }
