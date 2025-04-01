@@ -96,32 +96,34 @@ export default function Form() {
   return (
     <>
       {alert && <Alert message={alert.message} type={alert.type} onClose={() => setAlert(null)} />}
+      <div className="flex justify-center items-center  h-[807px]">
+      
       <form
         action=""
         onSubmit={handleSubmit}
-        className="mx-auto flex max-h-[534px] max-w-[484px] flex-wrap gap-x-4 gap-y-[14.5]"
-      >
+        className='flex flex-wrap gap-y-[14.5px] gap-x-4 max-w-[484px] max-h-[534px] justify-center align-center m-auto text-center'
+        >
         {formFields.map((field) => (
-          <div key={field.id} className="flex flex-1 flex-col">
+          <div key={field.id} className="flex flex-col w-full sm:w-auto items-center">
             <input
               type={field.type}
               id={field.id}
               placeholder={field.placeholder}
               value={formData[field.id as keyof FieldTypes]}
               onChange={handleChange}
-              className="bg-neutral-extra-light rounded-[10px] px-[24px] py-[20px]"
+              className='bg-neutral-extra-light py-[20px] px-[24px] rounded-[10px] w-[234px] '
             />
           </div>
         ))}
 
-        <div className="w-full">
+        <div className="w-full ">
           <input
             type="text"
             id="subject"
             placeholder="Asunto"
             value={formData.subject}
             onChange={handleChange}
-            className="bg-neutral-extra-light w-full rounded-[10px] px-[24px] py-[20px]"
+            className='bg-neutral-extra-light py-[20px] px-[24px] rounded-[10px] w-[234px] sm:w-[484px] '
           />
         </div>
         <div className="w-full">
@@ -130,16 +132,19 @@ export default function Form() {
             placeholder="Mensaje"
             value={formData.message}
             onChange={handleChange}
-            className="bg-neutral-extra-light w-full rounded-[10px] px-[24px] py-[20px]"
-          />
+            className="bg-neutral-extra-light py-[20px] px-[24px] rounded-[10px] w-[234px] sm:w-[484px]"
+            />
         </div>
+        <div className="w-full flex justify-center ">
+  <Button style="primary" className="!w-[234px] sm:!w-[484px]">
+    Enviar
+  </Button>
+</div>
 
-        <div className="sm:w-full w-[195px] bg-red-200">
-          <Button style="primary" className="sm:w-full! w-[195px]">
-            Enviar
-          </Button>
-        </div>
+
       </form>
+      </div>
+
     </>
   );
 }

@@ -22,15 +22,13 @@ const Contacto = () => {
           </p>
         </div>
 
-        <section className='relative -full lg:h-[648px] bg-[url("/bg_form.webp")] bg-cover bg-center flex justify-center items-center'>
+        <section className='relative -full lg:h-[648px] sm:bg-[url("/bg_form.webp")] bg-[url("/bg_form_mobile.webp")]  bg-cover bg-center flex justify-center items-center'>
           <div className="bg-[url('/ruta-de-la-imagen.jpg')] bg-cover   sm:bg-center ">
             <Form />
           </div>
         </section>
       </div>
 
-      {/* Agradecimientos por contactar */}
-      {/* <ThanksForContacting/> */}
 
       <div className="align-center flex flex-col justify-center gap-[24px] py-[80px] text-center">
         <h2 className="text-text-green text-[28px] font-bold">
