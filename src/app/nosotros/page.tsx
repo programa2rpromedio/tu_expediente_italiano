@@ -48,29 +48,33 @@ const About = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className={`h-[92px] w-[105px] overflow-hidden rounded-[10px] bg-white sm:h-[290px] sm:w-[305px] ${
+              className={`h-[92px] w-[105px] overflow-hidden rounded-[10px] bg-white sm:h-[290px] sm:w-[305px] relative ${
                 index === Math.floor(images.length / 2) ? '-translate-y-8 sm:translate-y-0' : ''
               }`}
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className={`h-full w-full object-cover ${
-                  index === Math.floor(images.length / 2) ? 'object-[59%_50%]' : 'object-center'
-                }`}
+                className={`h-full w-full object-cover filter blur-[8px] transition-all duration-1000 ease-out opacity-0 ${index === Math.floor(images.length / 2) ? 'object-[59%_50%]' : 'object-center'}`}
+                onLoad={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                  // Explicitly type the event.target to HTMLImageElement
+                  const imgElement = e.target as HTMLImageElement;
+                  imgElement.classList.remove('opacity-0', 'filter', 'blur-[8px]');
+                }}
               />
             </div>
           ))}
         </div>
       </div>
+
       <p className="mt-[-65px] w-[282px] pt-[150px] pb-[28px] text-center text-[16px] sm:w-[1002px] sm:pt-0 sm:text-[24px]">
         Somos un equipo de profesionales (ingenieros, abogados, traductores y gestores)
         especializados en la transmisión de la ciudadanía italiana. Hacemos posible oportunidades y
         experiencias a nuestros clientes. Nos proponemos seguir creciendo continuamente, para
         cumplir el objetivo planteado desde un principio:
       </p>
-      {/* Texto principal */}
 
+      {/* Texto principal */}
       {/* Frase destacada */}
       <h2 className="text-text-green flex w-[282px] items-center justify-center pb-[40px] text-center text-[16px] font-bold sm:w-[1002px] sm:pb-[62px] sm:text-[28px] sm:text-black">
         Generar puentes entre Italia y Argentina.
