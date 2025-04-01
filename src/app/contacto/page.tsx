@@ -29,7 +29,6 @@ const Contacto = () => {
         </section>
       </div>
 
-
       <div className="align-center flex flex-col justify-center gap-[24px] py-[80px] text-center">
         <h2 className="text-text-green text-[28px] font-bold">
           Seguinos en nuestras Redes Sociales
@@ -51,15 +50,16 @@ const Contacto = () => {
         </div>
       </div>
 
-      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center  sm:pb-[80px] pb-[24px]">
-        <div className="w-[356px]  flex justify-center">
+      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center  sm:pb-[80px] pb-[24px] m-auto ">
+        <div className="w-[356px]  flex justify-center  m-auto">
           <CardInfo
             title="Nuestra oficina"
-            description="Calle 48, Num 877."
+            description="Calle 48, Num 877, 3er piso, oficina 309. La Plata. 
+Buenos Aires, Argentina"
             icon={<Oficina className="text-primary-dark" />}
           />
         </div>
-        <div className="w-[356px] flex justify-center">
+        <div className="w-[356px] flex justify-center m-auto">
           <CardInfo
             title="Contacto"
             description={`Teléfono: +54 9 1124084508 Mail: tuexpedienteitaliano@gmail.com`}
