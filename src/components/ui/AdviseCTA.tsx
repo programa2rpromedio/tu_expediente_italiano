@@ -3,9 +3,9 @@ import Button from './Button';
 
 export default function AdviseCTA() {
   return (
-    <section className="relative w-full py-[60px]">
+    <section className="relative w-full py-[60px] ">
       <div className="mx-auto max-w-[1200px]">
-        <div className="mx-auto mb-[27px] flex max-w-[554px] flex-col gap-4 px-[40px] text-center lg:px-0">
+        <div className="mx-auto mb-[27px] flex max-w-[554px] flex-col gap-4 px-[40px] text-center lg:px-0 ">
           <h2 className="text-h2 text-neutral-dark">¡Asesorate con nosotros!</h2>
           <p>
             Nos capacitamos constantemente en todos las actualizaciones de la ciudadanía italiana.

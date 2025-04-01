@@ -30,13 +30,18 @@ const Contacto = () => {
       </div>
 
       <div className="align-center flex flex-col justify-center gap-[24px] py-[80px] text-center">
-        <h2 className="text-text-green text-[28px] font-bold">
-          Seguinos en nuestras Redes Sociales
-        </h2>
+      <h2
+  className="text-text-green sm:text-[28px] text-[20px] font-bold"
+>
+  Seguinos en nuestras Redes Sociales
+</h2>
 
-        <div className="flex justify-center gap-4">
-          <Link href="https://www.facebook.com/tuexpedienteitaliano/?ti=as" target="_blank">
-            <Facebook color="#006C26" className="cursor-pointer" />
+
+        <div className="flex justify-center gap-4 ">
+          <Link href="https://www.facebook.com/tuexpedienteitaliano/?ti=as" target="_blank"
+          >
+            <Facebook color="#006C26" className="cursor-pointer"
+             />
           </Link>
           <Link href="https://www.instagram.com/tuexpediente.italiano/" target="_blank">
             <Instagram color="#006C26" className="cursor-pointer" />
@@ -50,8 +55,8 @@ const Contacto = () => {
         </div>
       </div>
 
-      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center  sm:pb-[80px] pb-[24px] m-auto ">
-        <div className="w-[356px]  flex justify-center  m-auto">
+      <div className="gap-[24px]  flex flex-wrap sm:flex-row flex-col justify-center  sm:pb-[80px] pb-[24px] items-center ">
+        <div className="w-[356px]  flex justify-center   shadow-lg shadow-gray-300 rounded-lg">
           <CardInfo
             title="Nuestra oficina"
             description="Calle 48, Num 877, 3er piso, oficina 309. La Plata. 
@@ -59,7 +64,7 @@ Buenos Aires, Argentina"
             icon={<Oficina className="text-primary-dark" />}
           />
         </div>
-        <div className="w-[356px] flex justify-center m-auto">
+        <div className="w-[356px] flex justify-center  shadow-lg shadow-gray-300 rounded-lg">
           <CardInfo
             title="Contacto"
             description={`Teléfono: +54 9 1124084508 Mail: tuexpedienteitaliano@gmail.com`}

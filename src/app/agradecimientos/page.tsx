@@ -16,9 +16,14 @@ const Agradecimientos = () => {
           <ThanksForContacting/>
     
           <div className="align-center flex flex-col justify-center gap-[24px] py-[80px] text-center">
-            <h2 className="text-text-green text-[28px] font-bold">
-              Seguinos en nuestras Redes Sociales
-            </h2>
+          <h2
+  className="text-text-green sm:text-[28px] text-[20px] font-bold "
+  
+>
+  Seguinos en nuestras Redes Sociales
+</h2>
+
+
     
             <div className="flex justify-center gap-4">
               <Link href="https://www.facebook.com/tuexpedienteitaliano/?ti=as" target="_blank">

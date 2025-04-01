@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function CardService({ imgSrc, alt, title, slug }: CardCarrouselProps) {
   return (
     <Link href={`/servicios/servicio/${slug}`}>
-      <div className="bg-neutral-extra-light hover:bg-primary-extra-light h-[307px] w-[320px] cursor-pointer overflow-hidden rounded-[20px] px-[10px] py-4 transition-all duration-300 lg:h-[317px] lg:w-[412px] lg:p-4">
+      <div className="transition-transform transform hover:scale-105 bg-neutral-extra-light hover:bg-primary-extra-light h-[307px] w-[320px] cursor-pointer overflow-hidden rounded-[20px] px-[10px] py-4 transition-all duration-300 lg:h-[317px] lg:w-[412px] lg:p-4">
         <div className="overflow-hidden min-[330px]:pb-4 lg:pb-6">
           <Image
             src={imgSrc}

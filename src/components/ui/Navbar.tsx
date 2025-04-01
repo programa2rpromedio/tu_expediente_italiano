@@ -11,7 +11,9 @@ export default function Navbar() {
   const handleShowNav = () => setShowNavMobile(!showNavMobile);
 
   return (
-    <header className="bg-neutral-extra-light py-4 overflow-y-visible ">
+<header className="sm:bg-neutral-extra-light sm:shadow-lg py-4 overflow-y-visible">
+
+
       <div className="max-w-screen-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -117,7 +119,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
               <div className="block md:hidden">
                 <button
-                  className="text-neutral-dark-600 hover:text-neutral-dark-600/75 rounded-sm bg-gray-100 p-2 transition hover:cursor-pointer"
+                  className="text-neutral-dark-600 hover:text-neutral-dark-600/75 rounded-sm sm:bg-gray-100 p-2 transition hover:cursor-pointer"
                   onClick={handleShowNav}
                 >
                   <svg

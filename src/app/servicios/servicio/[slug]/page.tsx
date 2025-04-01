@@ -18,41 +18,41 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   switch (slug) {
     case 'asesoria':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <AdviseService />
         </div>
       );
     case 'busqueda-genealogica':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <GenealogicalSearch />
         </div>
       );
     case 'ciudadania-en-argentina':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <ArgentineCitizenship />
         </div>
       );
     case 'ciudadania-en-italia':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <ItalianCitizenship />
         </div>
       );
     case 'legales':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <LegalService />
         </div>
       );
     case 'juicio-por-falta-de-turno':
       return (
-        <div className="min-h-screen">
+        <div className="">
           <TurnJudgmentService />
         </div>
       );
     default:
-      return <div className="min-h-screen">Página no encontrada</div>;
+      return <div className="">Página no encontrada</div>;
   }
 }

@@ -21,6 +21,7 @@ export default function Servicios() {
             alt={service.nombre}
             title={service.nombre}
             slug={service.slug}
+            
           />
         ))}
       </section>
