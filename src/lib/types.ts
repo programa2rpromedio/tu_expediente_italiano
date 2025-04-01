@@ -11,6 +11,8 @@ export interface IconProps {
   className?: string;
   onClick?: React.MouseEventHandler<SVGSVGElement> | undefined;
   color?: string;
+  width?: string
+height?: string
 }
 
 export interface CardCarrouselProps {
