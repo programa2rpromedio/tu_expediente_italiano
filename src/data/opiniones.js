@@ -83,4 +83,7 @@ export const testimonials = [
   { src: '/testimonials/mario.mp4', alt: 'mario' },
   { src: '/testimonials/facundo.mov', alt: 'facundo' },
   { src: '/testimonials/testimonial3.png', alt: 'testimonial3' },
+  { src: '/testimonials/mario.mp4', alt: 'mario' },
+  { src: '/testimonials/facundo.mov', alt: 'facundo' },
+  { src: '/testimonials/testimonial3.png', alt: 'testimonial3' },
 ];

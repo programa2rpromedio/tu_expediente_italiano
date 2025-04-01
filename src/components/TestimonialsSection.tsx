@@ -13,9 +13,9 @@ export default function TestimonialsSection({ className }: { className?: string 
 
   // Crear un array extendido para el efecto infinito
   const extendedTestimonials = [
-    ...testimonials.slice(-3), // Copia los últimos 3 al inicio
+    ...testimonials.slice(-3), // Copia los últimos 3 testimonios al inicio
     ...testimonials,
-    ...testimonials.slice(0, 3), // Copia los primeros 3 al final
+    ...testimonials.slice(0, 3), // Copia los primeros 3 testimonios al final
   ];
 
   useEffect(() => {
