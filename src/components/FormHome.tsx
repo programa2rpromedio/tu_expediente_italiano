@@ -25,8 +25,7 @@ export default function FormHome() {
           <div className="hidden h-[386px] flex-col gap-[24px] lg:flex">
             <CardInfo
               title="Nuestra oficina"
-              description="Calle 48, Num 877. La Plata. 
-Buenos Aires, Argentina"
+              description="Calle 48, Num 877. "
               icon={<Oficina className="text-primary-dark" />}
             />
             <CardInfo

@@ -55,6 +55,7 @@ export default function CarrouselServices() {
                 alt={servicio.nombre}
                 imgSrc={servicio.imagen}
                 title={servicio.nombre}
+                slug={servicio.slug}
               />
             </SwiperSlide>
           ))}
