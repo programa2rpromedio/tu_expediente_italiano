@@ -21,7 +21,8 @@ export default function AboutSection() {
           alt="Equipo Tu Expediente Italiano"
           width={477}
           height={287}
-          className="hidden h-[287px] w-[477px] rounded-[20px] object-cover object-center lg:block"
+          className="hidden h-[287px] w-[477px] rounded-[20px] object-cover object-center lg:block "
+          style={{ objectPosition: '50% 36%' }}
         />
       </div>
 
@@ -31,7 +32,7 @@ export default function AboutSection() {
           alt="franjas de Italia"
           width={24}
           height={127}
-          className="h-[77px] w-[12px] lg:h-[127px] lg:w-[24px]"
+          className="h-[77px] w-[12px] lg:h-[127px] lg:w-[24px] "
         />
       </div>
     </section>
