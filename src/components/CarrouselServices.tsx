@@ -62,18 +62,18 @@ export default function CarrouselServices() {
         </Swiper>
       </div>
       <div className="swiper-button-prev-services bg-primary-extra-light text-primary-regular! absolute! top-1/2 left-0! hidden h-[64px]! w-[64px]! -translate-y-1/2 items-center justify-center rounded-full after:hidden lg:flex">
-        <ArrowLeft className="h-[40px] w-[40px] cursor-pointer" />
+        <ArrowLeft className="h-[40px] w-[40px] cursor-pointer" color="#00AD3C" />
       </div>
       <div className="swiper-button-next-services bg-primary-extra-light text-primary-regular! absolute! top-1/2 right-0! hidden h-[64px]! w-[64px]! -translate-y-1/2 items-center justify-center rounded-full after:hidden lg:flex">
-        <ArrowRight className="h-[40px] w-[40px] cursor-pointer" />
+        <ArrowRight className="h-[40px] w-[40px] cursor-pointer" color="#00AD3C" />
       </div>
       <div className="swiper-pagination-services color-primary-regular! absolute bottom-[-32]! hidden justify-center lg:flex"></div>
       <div className="mt-[24px] mb-[40px] flex items-center justify-center gap-[20px] lg:hidden">
-        <div className="swiper-button-prev-services bg-primary-extra-light text-primary-regular! rounded-full">
-          <ArrowLeft className="h-[40px] w-[40px] cursor-pointer" />
+        <div className="swiper-button-prev-services bg-primary-extra-light  rounded-full">
+          <ArrowLeft className="h-[40px] w-[40px] cursor-pointer" color="#00AD3C" />
         </div>
-        <div className="swiper-button-next-services bg-primary-extra-light text-primary-regular! rounded-full">
-          <ArrowRight className="h-[40px] w-[40px] cursor-pointer" />
+        <div className="swiper-button-next-services bg-primary-extra-light  rounded-full">
+          <ArrowRight className="h-[40px] w-[40px] cursor-pointer" color="#00AD3C" />
         </div>
       </div>
     </section>

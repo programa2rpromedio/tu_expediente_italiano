@@ -7,20 +7,20 @@ export const serviciosCategorias = [
   },
   {
     id: 2,
-    nombre: 'Busqueda genealogica',
+    nombre: 'Búsqueda genealógica',
     imagen: '/images/busqueda_genealogica.webp',
     slug: 'busqueda-genealogica',
   },
   {
     id: 3,
-    nombre: 'Ciudadania en Argentina',
+    nombre: 'Ciudadanía en Argentina',
     imagen: '/images/ciudadania_en_argentina.webp',
     slug: 'ciudadania-en-argentina',
     banner: '/images/ciudadania_en_argentina_banner.webp',
   },
   {
     id: 4,
-    nombre: 'Ciudadania en Italia',
+    nombre: 'Ciudadanía en Italia',
     imagen: '/images/ciudadania_en_italia.webp',
     slug: 'ciudadania-en-italia',
   },

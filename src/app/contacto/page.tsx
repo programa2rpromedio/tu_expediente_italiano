@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Facebook from '@/components/icon/Facebook';
 import Instagram from '@/components/icon/Instagram';
@@ -17,7 +17,7 @@ const Contacto = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 100); 
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
@@ -36,10 +36,11 @@ const Contacto = () => {
         </div>
 
         <section className='relative -full lg:h-[648px] sm:bg-[url("/bg_form.webp")] bg-[url("/bg_form_mobile.webp")]  bg-cover bg-center flex justify-center items-center'>
-          <div className={`transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 filter blur-0' : 'opacity-0 filter blur-[8px]'} bg-[url('/ruta-de-la-imagen.jpg')] bg-cover sm:bg-center`}>
-            
-            <Form  />
-          {/* </div> */}
+          <div
+            className={`transition-opacity duration-1000 ease-out ${isVisible ? 'opacity-100 filter blur-0' : 'opacity-0 filter blur-[8px]'} bg-[url('/ruta-de-la-imagen.jpg')] bg-cover sm:bg-center`}
+          >
+            <Form />
+            {/* </div> */}
           </div>
         </section>
       </div>
@@ -56,17 +57,20 @@ const Contacto = () => {
           <Link href="https://www.instagram.com/tuexpediente.italiano/" target="_blank">
             <Instagram color="#006C26" className="cursor-pointer" />
           </Link>
-          <Link href="https://www.linkedin.com/in/tu-expediente-italiano-5ba0b723a/" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/tu-expediente-italiano-5ba0b723a/"
+            target="_blank"
+          >
             <LinkeIn color="#006C26" className="cursor-pointer" />
           </Link>
         </div>
       </div>
 
-      <div className="gap-[24px] flex flex-wrap sm:flex-row flex-col justify-center sm:pb-[80px] pb-[24px] items-center">
+      <div className="gap-[24px] flex flex-wrap sm:flex-row flex-col justify-center sm:pb-[80px] pb-[24px] items-center sm:items-stretch">
         <div className="w-[356px] flex justify-center shadow-lg shadow-gray-300 rounded-lg">
           <CardInfo
             title="Nuestra oficina"
-            description="Calle 48, Num 877, 3er piso, oficina 309. La Plata. Buenos Aires, Argentina"
+            description="Calle 48, Num 877."
             icon={<Oficina className="text-primary-dark" />}
           />
         </div>

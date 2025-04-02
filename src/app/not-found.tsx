@@ -1,8 +1,10 @@
+'use client';
 import Button from '@/components/ui/Button';
 import Image from 'next/image';
-import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const Custom404 = () => {
+  const router = useRouter();
   return (
     <div className="h-[467px]  bg-[#DCF7D3] relative overflow-hidden">
       <div className="absolute top-[40px] right-0">
@@ -16,7 +18,7 @@ const Custom404 = () => {
         />
       </div>
 
-{/* CENTRAL CONTENT */}
+      {/* CENTRAL CONTENT */}
       <div className="flex flex-col text-center sm:pt-[120px] pt-[150px]">
         <h1 className="sm:text-[80px] text-[56px] font-semibold text-text-green  leading-none">
           404
@@ -25,7 +27,10 @@ const Custom404 = () => {
           Página no encontrada
         </h2>
         <div className="m-auto sm:pt-[50px] pt-[30px]">
-          <Button className="bg-text-green text-white w-[150px] sm:w-[222px] h-[37px] text-[16px] sm:text-[24px] whitespace-nowrap ">
+          <Button
+            className="bg-text-green text-white w-[150px] sm:w-[222px] h-[37px] text-[16px] sm:text-[24px] whitespace-nowrap cursor-pointer"
+            onClick={() => router.push('/')}
+          >
             Volver al inicio
           </Button>
         </div>

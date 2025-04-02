@@ -19,7 +19,7 @@ export default function Footer() {
           <p>info@tuexpedienteitaliano.com</p>
           <p>tuexpedienteitaliano@gmail.com</p>
           <p>+54 9 1124084508</p>
-          <p>+Calle 48, N°877, La Plata, Buenos Aires 1900 Argentina</p>
+          <p>Calle 48, N°877.</p>
         </div>
       </section>
       <hr />
