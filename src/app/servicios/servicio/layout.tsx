@@ -14,7 +14,7 @@ export default function ServicioLayout({ children }: { children: React.ReactNode
   console.log(pathname.split('/'));
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
       <Pagination link={pathname.split('/').slice(1)} />
       <HeroService slug={params.slug as string} />
       {children}

@@ -11,9 +11,7 @@ export default function Navbar() {
   const handleShowNav = () => setShowNavMobile(!showNavMobile);
 
   return (
-<header className="sm:bg-neutral-extra-light sm:shadow-lg py-4 overflow-y-visible">
-
-
+    <header className="bg-neutral-extra-light sm:shadow-lg py-4 overflow-y-visible fixed w-full z-100">
       <div className="max-w-screen-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">

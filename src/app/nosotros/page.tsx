@@ -33,7 +33,7 @@ const About = () => {
   if (!clientSide) return null;
 
   return (
-    <div className="flex min-h-[100vh] flex-col items-center">
+    <div className="flex min-h-[100vh] flex-col items-center pt-[96px]">
       {/* Sección Nosotros */}
       <div className="bg-neutral-extra-light flex h-[150px] w-full items-center justify-center sm:h-[350px] sm:items-start sm:justify-center sm:pt-[62px]">
         <h2 className="text-text-green text-center text-[28px] font-bold sm:mt-[20px] sm:text-left">

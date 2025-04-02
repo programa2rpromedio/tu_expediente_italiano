@@ -22,7 +22,7 @@ const Alert: React.FC<AlertProps> = ({ type = 'success', message, onClose, autoC
 
   const baseStyles = {
     container:
-      'fixed top-4 h-auto inset-x-0 mx-auto z-50 max-w-[550px] w-full md:w-[550px] sm:w-[300px] xs:w-[200px] p-4 rounded-lg shadow-lg border flex items-center', // Añadido flex items-center
+      'fixed top-4 h-auto inset-x-0 mx-auto z-[150] max-w-[550px] w-full md:w-[550px] sm:w-[300px] xs:w-[200px] p-4 rounded-lg shadow-lg border flex items-center', // Añadido flex items-center
     content: 'flex items-center justify-between w-full',
     text: 'text-sm text-[#4C4C4C] md:text-[28px] text-weight-400',
     button: 'ml-4 p-1 rounded-md focus:outline-none focus:ring-2',

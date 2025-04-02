@@ -12,7 +12,7 @@ export default function SubBannerHome() {
         </h2>
         <Button
           style="primary"
-          className="lg:text-[20px] font-dm-sans w-[171px] cursor-pointer text-[16px] font-bold text-nowrap lg:w-[257px]!"
+          className="lg:text-[20px]! font-dm-sans w-[171px] cursor-pointer text-[16px]! font-bold text-nowrap lg:w-[257px]!"
           onClick={() => window.open('https://wa.me/5491124084508')}
         >
           Consultanos ahora

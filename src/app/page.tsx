@@ -8,7 +8,7 @@ import SubBannerHome from '@/components/SubBannerHome';
 
 export default function Home() {
   return (
-    <>
+    <div className="pt-[96px]">
       {/* <h1 className='text-primary-regular text-h1'>Tu expediente italiano</h1> */}
       <BannerHome />
       <SubBannerHome />
@@ -17,6 +17,6 @@ export default function Home() {
       <Opinions />
       <FormHome />
       <Maps />
-    </>
+    </div>
   );
 }

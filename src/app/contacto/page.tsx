@@ -23,7 +23,7 @@ const Contacto = () => {
   }, []);
 
   return (
-    <div>
+    <div className="pt-[96px]">
       {/* Contenedor de contacto  */}
       <div>
         <div className="bg-[#F6F6F6] h-auto">

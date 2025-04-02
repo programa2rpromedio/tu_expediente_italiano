@@ -7,7 +7,7 @@ import { serviciosCategorias } from '@/data/servicios';
 
 export default function Servicios() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-[96px]">
       <Pagination link={['servicios']} />
       <div className="bg-neutral-extra-light flex h-[144px] items-center justify-center py-[40px] text-center">
         <h1 className="text-primary-regular text-h2">Nuestros Servicios</h1>
@@ -21,7 +21,6 @@ export default function Servicios() {
             alt={service.nombre}
             title={service.nombre}
             slug={service.slug}
-            
           />
         ))}
       </section>
